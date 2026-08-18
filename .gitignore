@@ -3,6 +3,10 @@ data
 trained_models
 results
 
+# Local paper-reproduction build artifacts
+.repro/
+reproduction_artifacts/
+
 # Created by https://www.toptal.com/developers/gitignore/api/python
 # Edit at https://www.toptal.com/developers/gitignore?templates=python
 
