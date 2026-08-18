@@ -1,0 +1,132 @@
+{
+  "paper": {
+    "arxiv": "1906.01629",
+    "title": "Exact Combinatorial Optimization with Graph Convolutional Neural Networks",
+    "source": "Main paper Table 2 and set-cover ablation table"
+  },
+  "tables": {
+    "main": {
+      "setcover": {
+        "small": {
+          "internal:vanillafullstrong": {"time": 17.3, "time_cv_percent": 6.1, "wins": 0, "solved": 100, "nodes": 17, "nodes_cv_percent": 13.7},
+          "internal:relpscost": {"time": 8.98, "time_cv_percent": 4.8, "wins": 0, "solved": 100, "nodes": 54, "nodes_cv_percent": 20.8},
+          "ml-competitor:extratrees_gcnn_agg": {"time": 9.28, "time_cv_percent": 4.9, "wins": 0, "solved": 100, "nodes": 187, "nodes_cv_percent": 9.4},
+          "ml-competitor:svmrank_khalil": {"time": 8.1, "time_cv_percent": 3.8, "wins": 1, "solved": 100, "nodes": 165, "nodes_cv_percent": 8.2},
+          "ml-competitor:lambdamart_khalil": {"time": 7.19, "time_cv_percent": 4.2, "wins": 14, "solved": 100, "nodes": 167, "nodes_cv_percent": 9.0},
+          "gcnn:baseline": {"time": 6.59, "time_cv_percent": 3.1, "wins": 85, "solved": 100, "nodes": 134, "nodes_cv_percent": 7.6}
+        },
+        "medium": {
+          "internal:vanillafullstrong": {"time": 411.34, "time_cv_percent": 4.3, "wins": 0, "solved": 90, "nodes": 171, "nodes_cv_percent": 6.4},
+          "internal:relpscost": {"time": 60.07, "time_cv_percent": 3.7, "wins": 0, "solved": 100, "nodes": 1741, "nodes_cv_percent": 7.9},
+          "ml-competitor:extratrees_gcnn_agg": {"time": 92.47, "time_cv_percent": 5.9, "wins": 0, "solved": 100, "nodes": 2187, "nodes_cv_percent": 7.9},
+          "ml-competitor:svmrank_khalil": {"time": 73.58, "time_cv_percent": 3.1, "wins": 0, "solved": 100, "nodes": 1915, "nodes_cv_percent": 3.8},
+          "ml-competitor:lambdamart_khalil": {"time": 59.98, "time_cv_percent": 3.9, "wins": 0, "solved": 100, "nodes": 1925, "nodes_cv_percent": 4.9},
+          "gcnn:baseline": {"time": 42.48, "time_cv_percent": 2.7, "wins": 100, "solved": 100, "nodes": 1450, "nodes_cv_percent": 3.3}
+        },
+        "big": {
+          "internal:vanillafullstrong": {"time": 3600.0, "time_cv_percent": 0.0, "wins": 0, "solved": 0, "nodes": null, "nodes_cv_percent": null},
+          "internal:relpscost": {"time": 1677.02, "time_cv_percent": 3.0, "wins": 4, "solved": 65, "nodes": 47299, "nodes_cv_percent": 4.9},
+          "ml-competitor:extratrees_gcnn_agg": {"time": 2869.21, "time_cv_percent": 3.2, "wins": 0, "solved": 35, "nodes": 59013, "nodes_cv_percent": 9.3},
+          "ml-competitor:svmrank_khalil": {"time": 2389.92, "time_cv_percent": 2.3, "wins": 0, "solved": 47, "nodes": 42120, "nodes_cv_percent": 5.4},
+          "ml-competitor:lambdamart_khalil": {"time": 2165.96, "time_cv_percent": 2.0, "wins": 0, "solved": 54, "nodes": 45319, "nodes_cv_percent": 3.4},
+          "gcnn:baseline": {"time": 1489.91, "time_cv_percent": 3.3, "wins": 66, "solved": 70, "nodes": 29981, "nodes_cv_percent": 4.9}
+        }
+      },
+      "cauctions": {
+        "small": {
+          "internal:vanillafullstrong": {"time": 4.11, "time_cv_percent": 12.1, "wins": 0, "solved": 100, "nodes": 6, "nodes_cv_percent": 30.3},
+          "internal:relpscost": {"time": 2.74, "time_cv_percent": 7.8, "wins": 0, "solved": 100, "nodes": 10, "nodes_cv_percent": 32.1},
+          "ml-competitor:extratrees_gcnn_agg": {"time": 2.47, "time_cv_percent": 7.3, "wins": 0, "solved": 100, "nodes": 86, "nodes_cv_percent": 15.9},
+          "ml-competitor:svmrank_khalil": {"time": 2.31, "time_cv_percent": 6.8, "wins": 0, "solved": 100, "nodes": 77, "nodes_cv_percent": 15.0},
+          "ml-competitor:lambdamart_khalil": {"time": 1.79, "time_cv_percent": 6.0, "wins": 75, "solved": 100, "nodes": 77, "nodes_cv_percent": 14.9},
+          "gcnn:baseline": {"time": 1.85, "time_cv_percent": 5.0, "wins": 25, "solved": 100, "nodes": 70, "nodes_cv_percent": 12.0}
+        },
+        "medium": {
+          "internal:vanillafullstrong": {"time": 86.9, "time_cv_percent": 12.9, "wins": 0, "solved": 100, "nodes": 72, "nodes_cv_percent": 19.4},
+          "internal:relpscost": {"time": 17.41, "time_cv_percent": 6.6, "wins": 0, "solved": 100, "nodes": 689, "nodes_cv_percent": 21.2},
+          "ml-competitor:extratrees_gcnn_agg": {"time": 23.7, "time_cv_percent": 11.2, "wins": 0, "solved": 100, "nodes": 976, "nodes_cv_percent": 14.4},
+          "ml-competitor:svmrank_khalil": {"time": 23.1, "time_cv_percent": 9.8, "wins": 0, "solved": 100, "nodes": 867, "nodes_cv_percent": 13.4},
+          "ml-competitor:lambdamart_khalil": {"time": 14.42, "time_cv_percent": 9.5, "wins": 1, "solved": 100, "nodes": 873, "nodes_cv_percent": 14.3},
+          "gcnn:baseline": {"time": 10.29, "time_cv_percent": 7.1, "wins": 99, "solved": 100, "nodes": 657, "nodes_cv_percent": 12.2}
+        },
+        "big": {
+          "internal:vanillafullstrong": {"time": 1813.33, "time_cv_percent": 5.1, "wins": 0, "solved": 68, "nodes": 400, "nodes_cv_percent": 7.5},
+          "internal:relpscost": {"time": 136.17, "time_cv_percent": 7.9, "wins": 13, "solved": 100, "nodes": 5511, "nodes_cv_percent": 11.7},
+          "ml-competitor:extratrees_gcnn_agg": {"time": 451.39, "time_cv_percent": 14.6, "wins": 0, "solved": 95, "nodes": 10290, "nodes_cv_percent": 16.2},
+          "ml-competitor:svmrank_khalil": {"time": 364.48, "time_cv_percent": 7.7, "wins": 0, "solved": 98, "nodes": 6329, "nodes_cv_percent": 7.7},
+          "ml-competitor:lambdamart_khalil": {"time": 222.54, "time_cv_percent": 8.6, "wins": 0, "solved": 100, "nodes": 7006, "nodes_cv_percent": 6.9},
+          "gcnn:baseline": {"time": 114.16, "time_cv_percent": 10.3, "wins": 87, "solved": 100, "nodes": 5169, "nodes_cv_percent": 14.9}
+        }
+      },
+      "facilities": {
+        "small": {
+          "internal:vanillafullstrong": {"time": 30.36, "time_cv_percent": 19.6, "wins": 4, "solved": 100, "nodes": 14, "nodes_cv_percent": 34.5},
+          "internal:relpscost": {"time": 26.55, "time_cv_percent": 16.2, "wins": 9, "solved": 100, "nodes": 22, "nodes_cv_percent": 31.9},
+          "ml-competitor:extratrees_gcnn_agg": {"time": 28.96, "time_cv_percent": 14.7, "wins": 3, "solved": 100, "nodes": 135, "nodes_cv_percent": 20.0},
+          "ml-competitor:svmrank_khalil": {"time": 23.58, "time_cv_percent": 14.1, "wins": 11, "solved": 100, "nodes": 117, "nodes_cv_percent": 20.5},
+          "ml-competitor:lambdamart_khalil": {"time": 23.34, "time_cv_percent": 13.6, "wins": 16, "solved": 100, "nodes": 117, "nodes_cv_percent": 20.7},
+          "gcnn:baseline": {"time": 22.1, "time_cv_percent": 15.8, "wins": 57, "solved": 100, "nodes": 107, "nodes_cv_percent": 21.4}
+        },
+        "medium": {
+          "internal:vanillafullstrong": {"time": 214.25, "time_cv_percent": 15.2, "wins": 1, "solved": 100, "nodes": 76, "nodes_cv_percent": 15.8},
+          "internal:relpscost": {"time": 156.12, "time_cv_percent": 11.5, "wins": 8, "solved": 100, "nodes": 142, "nodes_cv_percent": 20.6},
+          "ml-competitor:extratrees_gcnn_agg": {"time": 159.86, "time_cv_percent": 15.3, "wins": 3, "solved": 100, "nodes": 401, "nodes_cv_percent": 11.6},
+          "ml-competitor:svmrank_khalil": {"time": 130.86, "time_cv_percent": 13.6, "wins": 13, "solved": 100, "nodes": 348, "nodes_cv_percent": 11.4},
+          "ml-competitor:lambdamart_khalil": {"time": 128.48, "time_cv_percent": 15.4, "wins": 23, "solved": 100, "nodes": 349, "nodes_cv_percent": 12.9},
+          "gcnn:baseline": {"time": 120.94, "time_cv_percent": 14.2, "wins": 52, "solved": 100, "nodes": 339, "nodes_cv_percent": 11.8}
+        },
+        "big": {
+          "internal:vanillafullstrong": {"time": 742.91, "time_cv_percent": 9.1, "wins": 15, "solved": 90, "nodes": 55, "nodes_cv_percent": 7.2},
+          "internal:relpscost": {"time": 631.5, "time_cv_percent": 8.1, "wins": 14, "solved": 96, "nodes": 110, "nodes_cv_percent": 15.5},
+          "ml-competitor:extratrees_gcnn_agg": {"time": 671.01, "time_cv_percent": 11.1, "wins": 1, "solved": 95, "nodes": 381, "nodes_cv_percent": 11.1},
+          "ml-competitor:svmrank_khalil": {"time": 586.13, "time_cv_percent": 10.0, "wins": 21, "solved": 95, "nodes": 321, "nodes_cv_percent": 8.8},
+          "ml-competitor:lambdamart_khalil": {"time": 582.38, "time_cv_percent": 10.5, "wins": 15, "solved": 95, "nodes": 314, "nodes_cv_percent": 7.0},
+          "gcnn:baseline": {"time": 563.36, "time_cv_percent": 10.7, "wins": 30, "solved": 95, "nodes": 338, "nodes_cv_percent": 10.9}
+        }
+      },
+      "indset": {
+        "small": {
+          "internal:vanillafullstrong": {"time": 23.58, "time_cv_percent": 29.9, "wins": 9, "solved": 100, "nodes": 7, "nodes_cv_percent": 35.9},
+          "internal:relpscost": {"time": 8.77, "time_cv_percent": 11.8, "wins": 7, "solved": 100, "nodes": 20, "nodes_cv_percent": 36.1},
+          "ml-competitor:extratrees_gcnn_agg": {"time": 10.75, "time_cv_percent": 22.1, "wins": 1, "solved": 100, "nodes": 76, "nodes_cv_percent": 44.2},
+          "ml-competitor:svmrank_khalil": {"time": 8.83, "time_cv_percent": 14.9, "wins": 2, "solved": 100, "nodes": 46, "nodes_cv_percent": 32.2},
+          "ml-competitor:lambdamart_khalil": {"time": 7.31, "time_cv_percent": 12.7, "wins": 30, "solved": 100, "nodes": 52, "nodes_cv_percent": 38.1},
+          "gcnn:baseline": {"time": 6.43, "time_cv_percent": 11.6, "wins": 51, "solved": 100, "nodes": 43, "nodes_cv_percent": 40.2}
+        },
+        "medium": {
+          "internal:vanillafullstrong": {"time": 1503.55, "time_cv_percent": 20.9, "wins": 0, "solved": 74, "nodes": 38, "nodes_cv_percent": 28.2},
+          "internal:relpscost": {"time": 110.99, "time_cv_percent": 24.4, "wins": 41, "solved": 100, "nodes": 729, "nodes_cv_percent": 37.3},
+          "ml-competitor:extratrees_gcnn_agg": {"time": 1183.37, "time_cv_percent": 34.2, "wins": 1, "solved": 47, "nodes": 4664, "nodes_cv_percent": 45.8},
+          "ml-competitor:svmrank_khalil": {"time": 242.91, "time_cv_percent": 29.3, "wins": 1, "solved": 96, "nodes": 546, "nodes_cv_percent": 26.0},
+          "ml-competitor:lambdamart_khalil": {"time": 219.22, "time_cv_percent": 36.0, "wins": 15, "solved": 91, "nodes": 747, "nodes_cv_percent": 35.1},
+          "gcnn:baseline": {"time": 192.91, "time_cv_percent": 110.2, "wins": 42, "solved": 82, "nodes": 1841, "nodes_cv_percent": 88.0}
+        },
+        "big": {
+          "internal:vanillafullstrong": {"time": 3600.0, "time_cv_percent": 0.0, "wins": 0, "solved": 0, "nodes": null, "nodes_cv_percent": null},
+          "internal:relpscost": {"time": 2045.61, "time_cv_percent": 18.3, "wins": 22, "solved": 42, "nodes": 2675, "nodes_cv_percent": 24.0},
+          "ml-competitor:extratrees_gcnn_agg": {"time": 3565.12, "time_cv_percent": 1.2, "wins": 0, "solved": 3, "nodes": 38296, "nodes_cv_percent": 4.1},
+          "ml-competitor:svmrank_khalil": {"time": 2902.94, "time_cv_percent": 9.6, "wins": 1, "solved": 18, "nodes": 6256, "nodes_cv_percent": 15.1},
+          "ml-competitor:lambdamart_khalil": {"time": 3044.94, "time_cv_percent": 7.0, "wins": 0, "solved": 12, "nodes": 8893, "nodes_cv_percent": 3.5},
+          "gcnn:baseline": {"time": 2024.37, "time_cv_percent": 30.6, "wins": 25, "solved": 29, "nodes": 2997, "nodes_cv_percent": 26.3}
+        }
+      }
+    },
+    "setcover_ablation": {
+      "small": {
+        "gcnn:mean_convolution": {"time": 6.7, "time_cv_percent": 3.0, "wins": 13, "solved": 100, "nodes": 134, "nodes_cv_percent": 6.0},
+        "gcnn:no_prenorm": {"time": 6.6, "time_cv_percent": 3.0, "wins": 27, "solved": 100, "nodes": 134, "nodes_cv_percent": 6.0},
+        "gcnn:baseline": {"time": 6.6, "time_cv_percent": 3.0, "wins": 60, "solved": 100, "nodes": 134, "nodes_cv_percent": 8.0}
+      },
+      "medium": {
+        "gcnn:mean_convolution": {"time": 43.7, "time_cv_percent": 3.0, "wins": 19, "solved": 100, "nodes": 1894, "nodes_cv_percent": 4.0},
+        "gcnn:no_prenorm": {"time": 42.5, "time_cv_percent": 3.0, "wins": 45, "solved": 100, "nodes": 1882, "nodes_cv_percent": 4.0},
+        "gcnn:baseline": {"time": 42.5, "time_cv_percent": 3.0, "wins": 36, "solved": 100, "nodes": 1870, "nodes_cv_percent": 3.0}
+      },
+      "big": {
+        "gcnn:mean_convolution": {"time": 1593.0, "time_cv_percent": 4.0, "wins": 6, "solved": 70, "nodes": 62227, "nodes_cv_percent": 6.0},
+        "gcnn:no_prenorm": {"time": 1511.7, "time_cv_percent": 3.0, "wins": 22, "solved": 70, "nodes": 57864, "nodes_cv_percent": 4.0},
+        "gcnn:baseline": {"time": 1489.9, "time_cv_percent": 3.0, "wins": 42, "solved": 70, "nodes": 56348, "nodes_cv_percent": 5.0}
+      }
+    }
+  }
+}
