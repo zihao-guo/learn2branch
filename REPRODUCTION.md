@@ -90,3 +90,11 @@ LEARN2BRANCH_SAMPLE_JOBS=80 bash reproduction/run_full_sampling_queue.sh
 ```
 
 默认顺序为 indset、facilities、setcover、cauctions。每类仍直接调用官方 `02_generate_dataset.py`，只改变并行 worker 数；完成标记和日志保存在 `reproduction_artifacts/full/`。若运行中断，脚本会拒绝在无完成标记的部分样本目录上继续，避免静默混合两次采样。
+
+每类样本完成后，可增量审计精确计数、连续文件名、字节数及路径与内容的聚合 SHA-256：
+
+```bash
+python reproduction/audit_full_samples.py --problem indset
+```
+
+重复 `--problem` 可一次审计多类；不传时审计全部四类。结果会增量合并至 `reproduction/results/full_samples_manifest.json`，样本本身仍保存在被 Git 忽略的 `data/samples/`。

@@ -1,0 +1,38 @@
+{
+  "completed_problems": [
+    "indset"
+  ],
+  "generator": "02_generate_dataset.py",
+  "paper": "arXiv:1906.01629",
+  "problems": {
+    "indset": {
+      "bytes": 7322989067,
+      "directory": "data/samples/indset/500_4",
+      "files": 140000,
+      "path_and_content_sha256": "236ceb41470d685f7bd17ee7a5a02b47af501f28e65746807a0d5600212ece98",
+      "splits": {
+        "test": {
+          "bytes": 1041971071,
+          "files": 20000
+        },
+        "train": {
+          "bytes": 5229482464,
+          "files": 100000
+        },
+        "valid": {
+          "bytes": 1051535532,
+          "files": 20000
+        }
+      }
+    }
+  },
+  "sampling": {
+    "expert": "vanillafullstrong",
+    "expert_query_probability": 0.05,
+    "exploration_policy": "pscost"
+  },
+  "seed": 0,
+  "total_bytes": 7322989067,
+  "total_files": 140000,
+  "upstream_commit": "57e82603fba39c34ff81baf9bd0b5768f5a1a860"
+}
