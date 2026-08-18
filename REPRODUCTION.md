@@ -103,7 +103,7 @@ python reproduction/audit_full_samples.py --problem indset
 
 ```bash
 LEARN2BRANCH_GCNN_JOBS=8 bash reproduction/run_full_training_queue.sh gcnn
-LEARN2BRANCH_COMPETITOR_JOBS=24 bash reproduction/run_full_training_queue.sh competitors
+LEARN2BRANCH_COMPETITOR_JOBS=12 bash reproduction/run_full_training_queue.sh competitors
 ```
 
-GCNN 队列包含四类问题的 baseline，以及 setcover 的 mean_convolution 和 no_prenorm，共 30 个训练；传统模型队列包含 ExtraTrees、SVMRank 和 LambdaMART，共 60 个训练。所有超参数与官方脚本保持一致。外部日志与可恢复完成标记保存在 `reproduction_artifacts/full_training/`；若发现无完成标记的部分模型目录，队列会拒绝覆盖。
+GCNN 队列包含四类问题的 baseline，以及 setcover 的 mean_convolution 和 no_prenorm，共 30 个训练；传统模型队列包含 ExtraTrees、SVMRank 和 LambdaMART，共 60 个训练。所有超参数与官方脚本保持一致。SVMRank 的单进程峰值内存约为 30 GiB，因此传统模型默认限制为 12 路并发。外部日志与可恢复完成标记保存在 `reproduction_artifacts/full_training/`；若发现无完成标记的部分模型目录，队列会拒绝覆盖。
