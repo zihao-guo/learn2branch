@@ -107,3 +107,11 @@ LEARN2BRANCH_COMPETITOR_JOBS=12 bash reproduction/run_full_training_queue.sh com
 ```
 
 GCNN 队列包含四类问题的 baseline，以及 setcover 的 mean_convolution 和 no_prenorm，共 30 个训练；传统模型队列包含 ExtraTrees、SVMRank 和 LambdaMART，共 60 个训练。所有超参数与官方脚本保持一致。SVMRank 的单进程峰值内存约为 30 GiB，因此传统模型默认限制为 12 路并发。外部日志与可恢复完成标记保存在 `reproduction_artifacts/full_training/`；若发现无完成标记的部分模型目录，队列会拒绝覆盖。
+
+完成训练后，验证全部必需产物、解析最终验证指标并计算模型文件的聚合 SHA-256：
+
+```bash
+python reproduction/audit_full_training.py
+```
+
+也可先用 `--family competitors` 或 `--family gcnn` 审计已经全部完成的单个模型族；结果会增量合并至 `reproduction/results/full_training_manifest.json`。
