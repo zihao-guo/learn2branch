@@ -1,5 +1,6 @@
 {
   "completed_problems": [
+    "cauctions",
     "facilities",
     "indset",
     "setcover"
@@ -7,6 +8,26 @@
   "generator": "02_generate_dataset.py",
   "paper": "arXiv:1906.01629",
   "problems": {
+    "cauctions": {
+      "bytes": 5934655630,
+      "directory": "data/samples/cauctions/100_500",
+      "files": 140000,
+      "path_and_content_sha256": "896cd74d18b135095d0110bccd813bd497e4c0224416bf508f39db60ac4403b8",
+      "splits": {
+        "test": {
+          "bytes": 848993750,
+          "files": 20000
+        },
+        "train": {
+          "bytes": 4232865433,
+          "files": 100000
+        },
+        "valid": {
+          "bytes": 852796447,
+          "files": 20000
+        }
+      }
+    },
     "facilities": {
       "bytes": 37368273267,
       "directory": "data/samples/facilities/100_100_5",
@@ -74,7 +95,7 @@
     "exploration_policy": "pscost"
   },
   "seed": 0,
-  "total_bytes": 60125726148,
-  "total_files": 420000,
+  "total_bytes": 66060381778,
+  "total_files": 560000,
   "upstream_commit": "57e82603fba39c34ff81baf9bd0b5768f5a1a860"
 }
