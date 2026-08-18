@@ -1,10 +1,31 @@
 {
   "completed_problems": [
+    "facilities",
     "indset"
   ],
   "generator": "02_generate_dataset.py",
   "paper": "arXiv:1906.01629",
   "problems": {
+    "facilities": {
+      "bytes": 37368273267,
+      "directory": "data/samples/facilities/100_100_5",
+      "files": 140000,
+      "path_and_content_sha256": "20395b21791fe55ad4b4d7d476c08846bcdf83cee6e374f7296870c588d558f6",
+      "splits": {
+        "test": {
+          "bytes": 5333441753,
+          "files": 20000
+        },
+        "train": {
+          "bytes": 26673082812,
+          "files": 100000
+        },
+        "valid": {
+          "bytes": 5361748702,
+          "files": 20000
+        }
+      }
+    },
     "indset": {
       "bytes": 7322989067,
       "directory": "data/samples/indset/500_4",
@@ -32,7 +53,7 @@
     "exploration_policy": "pscost"
   },
   "seed": 0,
-  "total_bytes": 7322989067,
-  "total_files": 140000,
+  "total_bytes": 44691262334,
+  "total_files": 280000,
   "upstream_commit": "57e82603fba39c34ff81baf9bd0b5768f5a1a860"
 }
