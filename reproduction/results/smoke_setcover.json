@@ -1,0 +1,85 @@
+{
+  "instance_counts": {
+    "test": 2,
+    "train": 4,
+    "transfer": 1,
+    "valid": 2
+  },
+  "instance_parameters": {
+    "density": 0.05,
+    "max_coef": 100,
+    "ncols": 1000,
+    "nrows": 500
+  },
+  "offline_metrics": {
+    "pretrained_layers": 7,
+    "test_acc_at_1": 0.0,
+    "test_loss": 4.593233108520508,
+    "train_acc_at_1": 0.375,
+    "train_loss": 4.530579566955566,
+    "valid_acc_at_1": 0.0,
+    "valid_loss": 4.43079948425293
+  },
+  "online_results": [
+    {
+      "cutoffs": 0,
+      "domain_changes": 336,
+      "fair_nodes": 2242,
+      "gap": 0.0,
+      "lps": 2063,
+      "nodes": 1570,
+      "policy": "internal:relpscost",
+      "solving_time": 20.81,
+      "status": "optimal",
+      "walltime": 30.92444740049541
+    },
+    {
+      "cutoffs": 0,
+      "domain_changes": 0,
+      "fair_nodes": 502,
+      "gap": 0.06982982393428322,
+      "lps": 854,
+      "nodes": 502,
+      "policy": "gcnn:baseline",
+      "solving_time": 120.29,
+      "status": "timelimit",
+      "walltime": 25.71560604032129
+    }
+  ],
+  "paper": "arXiv:1906.01629",
+  "problem": "setcover",
+  "repository_head_at_run": "24be2814c6b120068e34a6d42f4eb1ed070812e4",
+  "reused_artifacts": {
+    "instances": true,
+    "samples": true
+  },
+  "sample_counts": {
+    "test": 4,
+    "train": 8,
+    "valid": 4
+  },
+  "sampling": {
+    "expert": "vanillafullstrong",
+    "exploration_policy": "pscost",
+    "jobs": 2,
+    "query_expert_probability": 0.05,
+    "time_limit": 300.0
+  },
+  "smoke_script_sha256": "d1b1f6ce54aa3ce8e41b2e2ac8cb5d7d55145ef1c74035432b974688fe6cf9be",
+  "stage_seconds": {
+    "instance_generation": 0.0005491860210895538,
+    "online_solve": 56.79206793010235,
+    "sample_generation": 0.0002721725031733513,
+    "train_and_offline_test": 1.8768867515027523
+  },
+  "total_seconds": 58.74575025122613,
+  "training": {
+    "device": "CPU",
+    "epochs": 1,
+    "learning_rate": 0.001,
+    "model": "baseline",
+    "seed": 0
+  },
+  "upstream_commit": "57e82603fba39c34ff81baf9bd0b5768f5a1a860",
+  "working_tree_dirty_at_run": true
+}

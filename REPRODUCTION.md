@@ -40,3 +40,35 @@ python reproduction/verify_environment.py
 GCNN 使用 5 个随机种子、batch size 32、每 epoch 312 个 batch、学习率 0.001、最多 1,000 epochs；最终求解评估使用每个尺度 20 个实例、5 个种子及 3,600 秒时限。该规模需要大量 CPU 时间和磁盘空间，因此仓库还会提供使用相同生成器、特征、专家和模型代码的端到端冒烟复现入口，然后再启动全量实验。
 
 注意：上游 README 中的 `02_generate_samples.py` 是文件名笔误，实际脚本为 `02_generate_dataset.py`。
+
+## 端到端冒烟复现
+
+冒烟流程直接复用官方四个阶段的函数和类，不维护算法分叉：使用原始 set-cover 尺寸、`pscost` 探索、0.05 专家查询概率、baseline GCNN 和官方在线分支回调，仅将实例数、样本数和训练 epoch 缩小。
+
+```bash
+conda activate learn2branch
+source reproduction/activate.sh
+bash reproduction/run_smoke.sh
+```
+
+大体积中间文件写入 `reproduction_artifacts/smoke_setcover/`；可提交的指标摘要写入 `reproduction/results/smoke_setcover.json`。冒烟指标只证明端到端链路可运行，不能与论文全量结果比较。
+
+## 全量复现入口
+
+以下命令严格调用官方规模和超参数，并在 CPU 上依次运行四类问题的实例生成、专家采样、五随机种子训练、离线测试和在线求解：
+
+```bash
+bash reproduction/run_full.sh --problem all --phase all --jobs 4
+```
+
+建议按阶段运行以便检查磁盘和日志，例如：
+
+```bash
+bash reproduction/run_full.sh --problem setcover --phase instances --jobs 4
+bash reproduction/run_full.sh --problem setcover --phase samples --jobs 32
+bash reproduction/run_full.sh --problem setcover --phase train
+bash reproduction/run_full.sh --problem setcover --phase test
+bash reproduction/run_full.sh --problem setcover --phase evaluate
+```
+
+官方脚本会在目标目录已存在时主动报错，避免静默混合两次运行。因此每个生成阶段应只启动一次；继续已完成的流水线时从下一个 `--phase` 开始。
