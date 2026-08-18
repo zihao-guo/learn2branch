@@ -137,15 +137,44 @@ if __name__ == '__main__':
         type=int,
         default=0,
     )
+    parser.add_argument(
+        '--instance-index',
+        help='Evaluate only this zero-based index in the official 60-instance list.',
+        type=int,
+    )
+    parser.add_argument(
+        '--policy-type',
+        help='Evaluate only one policy family.',
+        choices=['internal', 'ml-competitor', 'gcnn'],
+    )
+    parser.add_argument(
+        '--policy-name',
+        help='Evaluate only one policy name.',
+    )
+    parser.add_argument(
+        '--seed',
+        help='Evaluate only one official random seed.',
+        type=utilities.valid_seed,
+    )
+    parser.add_argument(
+        '--time-limit',
+        help='SCIP CPU time limit in seconds.',
+        type=float,
+        default=3600,
+    )
+    parser.add_argument(
+        '--result-file',
+        help='Explicit CSV path, useful for resumable sharded evaluation.',
+    )
     args = parser.parse_args()
 
     result_file = f"{args.problem}_{time.strftime('%Y%m%d-%H%M%S')}.csv"
     instances = []
-    seeds = [0, 1, 2, 3, 4]
+    seeds = [0, 1, 2, 3, 4] if args.seed is None else [args.seed]
     gcnn_models = ['baseline']
     other_models = ['extratrees_gcnn_agg', 'lambdamart_khalil', 'svmrank_khalil']
     internal_branchers = ['relpscost']
-    time_limit = 3600
+    time_limit = args.time_limit
 
     if args.problem == 'setcover':
         instances += [{'type': 'small', 'path': f"data/instances/setcover/transfer_500r_1000c_0.05d/instance_{i+1}.lp"} for i in range(20)]
@@ -170,6 +199,11 @@ if __name__ == '__main__':
 
     else:
         raise NotImplementedError
+
+    if args.instance_index is not None:
+        if args.instance_index < 0 or args.instance_index >= len(instances):
+            parser.error('--instance-index must be between 0 and {}'.format(len(instances) - 1))
+        instances = [instances[args.instance_index]]
 
     branching_policies = []
 
@@ -199,6 +233,13 @@ if __name__ == '__main__':
                 'seed': seed,
                 'parameters': f'trained_models/{args.problem}/{model}/{seed}/best_params.pkl'
             })
+
+    if args.policy_type is not None:
+        branching_policies = [policy for policy in branching_policies if policy['type'] == args.policy_type]
+    if args.policy_name is not None:
+        branching_policies = [policy for policy in branching_policies if policy['name'] == args.policy_name]
+    if not branching_policies:
+        parser.error('the requested policy filters selected no policies')
 
     print(f"problem: {args.problem}")
     print(f"gpu: {args.gpu}")
@@ -261,8 +302,10 @@ if __name__ == '__main__':
         'walltime',
         'proctime',
     ]
-    os.makedirs('results', exist_ok=True)
-    with open(f"results/{result_file}", 'w', newline='') as csvfile:
+    result_path = args.result_file or os.path.join('results', result_file)
+    result_directory = os.path.dirname(os.path.abspath(result_path))
+    os.makedirs(result_directory, exist_ok=True)
+    with open(result_path, 'w', newline='') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
 
@@ -322,4 +365,3 @@ if __name__ == '__main__':
                 m.freeProb()
 
                 print(f"  {policy['type']}:{policy['name']} {policy['seed']} - {nnodes} ({nnodes+2*(ndomchgs+ncutoffs)}) nodes {nlps} lps {stime:.2f} ({walltime:.2f} wall {proctime:.2f} proc) s. {status}")
-
