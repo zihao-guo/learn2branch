@@ -126,6 +126,10 @@ if __name__ == '__main__':
         type=int,
         default=0,
     )
+    parser.add_argument(
+        '--result-file',
+        help='Explicit CSV path, useful for resumable full evaluation.',
+    )
     args = parser.parse_args()
 
     print(f"problem: {args.problem}")
@@ -150,10 +154,8 @@ if __name__ == '__main__':
     if args.problem == 'setcover':
         gcnn_models += ['mean_convolution', 'no_prenorm']
 
-    result_file = f"results/{args.problem}_test_{time.strftime('%Y%m%d-%H%M%S')}"
-
-    result_file = result_file + '.csv'
-    os.makedirs('results', exist_ok=True)
+    result_file = args.result_file or f"results/{args.problem}_test_{time.strftime('%Y%m%d-%H%M%S')}.csv"
+    os.makedirs(os.path.dirname(os.path.abspath(result_file)), exist_ok=True)
 
     ### TENSORFLOW SETUP ###
     if args.gpu == -1:

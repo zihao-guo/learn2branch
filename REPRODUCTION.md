@@ -116,6 +116,14 @@ python reproduction/audit_full_training.py
 
 也可先用 `--family competitors` 或 `--family gcnn` 审计已经全部完成的单个模型族；结果会增量合并至 `reproduction/results/full_training_manifest.json`。
 
+训练审计通过后，四类问题的官方 20,000-sample imitation-accuracy 测试可并行运行：
+
+```bash
+bash reproduction/run_full_test_queue.sh
+```
+
+它对每个问题直接调用 `04_test.py`，覆盖全部官方模型与 5 个 seed；结果和日志保存在 `reproduction_artifacts/full_test/`。
+
 在线求解评测严格保留官方的 60 个迁移实例、全部策略、5 个 seed 和每次 3600 秒 CPU 时限。`05_evaluate.py` 的默认行为不变，但提供了可选过滤参数，使总计 6,600 个独立 SCIP 求解可以通过可恢复队列并行执行：
 
 ```bash
