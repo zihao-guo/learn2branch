@@ -124,6 +124,14 @@ bash reproduction/run_full_test_queue.sh
 
 它对每个问题直接调用 `04_test.py`，覆盖全部官方模型与 5 个 seed；结果和日志保存在 `reproduction_artifacts/full_test/`。
 
+全部四个 CSV 完成后，用论文主文与消融表的原始数值逐项计算复现差值：
+
+```bash
+python reproduction/audit_full_test.py
+```
+
+论文参考值保存在 `reproduction/results/paper_test_reference.json`，审计输出写入 `reproduction/results/full_test_manifest.json`。
+
 在线求解评测严格保留官方的 60 个迁移实例、全部策略、5 个 seed 和每次 3600 秒 CPU 时限。`05_evaluate.py` 的默认行为不变，但提供了可选过滤参数，使总计 6,600 个独立 SCIP 求解可以通过可恢复队列并行执行：
 
 ```bash

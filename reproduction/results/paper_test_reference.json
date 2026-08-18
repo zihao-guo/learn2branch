@@ -1,0 +1,33 @@
+{
+  "metric_units": "percentage points",
+  "paper": "arXiv:1906.01629v3",
+  "source": "arxiv_main.tex, Table 1 (imitation learning accuracy) and Table 2 (set-cover ablation)",
+  "problems": {
+    "cauctions": {
+      "gcnn:baseline": {"acc@1": [61.6, 0.1], "acc@5": [91.0, 0.1], "acc@10": [97.8, 0.1]},
+      "ml-competitor:extratrees_gcnn_agg": {"acc@1": [52.9, 0.3], "acc@5": [84.3, 0.1], "acc@10": [94.1, 0.1]},
+      "ml-competitor:lambdamart_khalil": {"acc@1": [57.3, 0.3], "acc@5": [86.9, 0.2], "acc@10": [95.3, 0.1]},
+      "ml-competitor:svmrank_khalil": {"acc@1": [57.2, 0.2], "acc@5": [86.9, 0.2], "acc@10": [95.4, 0.1]}
+    },
+    "facilities": {
+      "gcnn:baseline": {"acc@1": [71.2, 0.2], "acc@5": [98.6, 0.1], "acc@10": [99.9, 0.0]},
+      "ml-competitor:extratrees_gcnn_agg": {"acc@1": [63.0, 0.4], "acc@5": [97.3, 0.1], "acc@10": [99.9, 0.0]},
+      "ml-competitor:lambdamart_khalil": {"acc@1": [68.0, 0.2], "acc@5": [98.0, 0.0], "acc@10": [99.9, 0.0]},
+      "ml-competitor:svmrank_khalil": {"acc@1": [67.8, 0.1], "acc@5": [98.1, 0.1], "acc@10": [99.9, 0.0]}
+    },
+    "indset": {
+      "gcnn:baseline": {"acc@1": [56.5, 0.2], "acc@5": [80.8, 0.3], "acc@10": [89.0, 0.1]},
+      "ml-competitor:extratrees_gcnn_agg": {"acc@1": [30.9, 0.4], "acc@5": [47.4, 0.3], "acc@10": [54.6, 0.3]},
+      "ml-competitor:lambdamart_khalil": {"acc@1": [48.9, 0.3], "acc@5": [68.9, 0.4], "acc@10": [77.0, 0.5]},
+      "ml-competitor:svmrank_khalil": {"acc@1": [48.0, 0.6], "acc@5": [69.3, 0.2], "acc@10": [78.1, 0.2]}
+    },
+    "setcover": {
+      "gcnn:baseline": {"acc@1": [65.5, 0.1], "acc@5": [92.4, 0.1], "acc@10": [98.2, 0.0]},
+      "gcnn:mean_convolution": {"acc@1": [65.4, 0.1], "acc@5": [92.4, 0.1], "acc@10": [98.2, 0.0]},
+      "gcnn:no_prenorm": {"acc@1": [65.5, 0.2], "acc@5": [92.3, 0.2], "acc@10": [98.1, 0.1]},
+      "ml-competitor:extratrees_gcnn_agg": {"acc@1": [51.8, 0.3], "acc@5": [80.5, 0.1], "acc@10": [91.4, 0.2]},
+      "ml-competitor:lambdamart_khalil": {"acc@1": [57.4, 0.2], "acc@5": [84.5, 0.1], "acc@10": [93.8, 0.1]},
+      "ml-competitor:svmrank_khalil": {"acc@1": [57.6, 0.2], "acc@5": [84.7, 0.1], "acc@10": [94.0, 0.1]}
+    }
+  }
+}
