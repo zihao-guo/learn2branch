@@ -1,0 +1,134 @@
+{
+  "generator": "01_generate_instances.py",
+  "paper": "arXiv:1906.01629",
+  "problems": {
+    "cauctions": {
+      "bytes": 545884367,
+      "directories": {
+        "test_100_500": {
+          "bytes": 74678143,
+          "files": 2000
+        },
+        "train_100_500": {
+          "bytes": 373436014,
+          "files": 10000
+        },
+        "transfer_100_500": {
+          "bytes": 3734052,
+          "files": 100
+        },
+        "transfer_200_1000": {
+          "bytes": 7558107,
+          "files": 100
+        },
+        "transfer_300_1500": {
+          "bytes": 11737281,
+          "files": 100
+        },
+        "valid_100_500": {
+          "bytes": 74740770,
+          "files": 2000
+        }
+      },
+      "files": 14300,
+      "path_and_content_sha256": "93e36bf80b0387cb903a1a14e32a58033d7d5a2c7697053b037a1dac81b46190"
+    },
+    "facilities": {
+      "bytes": 16178578993,
+      "directories": {
+        "test_100_100_5": {
+          "bytes": 2197936407,
+          "files": 2000
+        },
+        "train_100_100_5": {
+          "bytes": 10989562212,
+          "files": 10000
+        },
+        "transfer_100_100_5": {
+          "bytes": 109898105,
+          "files": 100
+        },
+        "transfer_200_100_5": {
+          "bytes": 225774041,
+          "files": 100
+        },
+        "transfer_400_100_5": {
+          "bytes": 457474649,
+          "files": 100
+        },
+        "valid_100_100_5": {
+          "bytes": 2197933579,
+          "files": 2000
+        }
+      },
+      "files": 14300,
+      "path_and_content_sha256": "fc23d0ea92a3a81099fca66a16838f346db0addf61a212ba7fd2d8595e9c3af7"
+    },
+    "indset": {
+      "bytes": 797468944,
+      "directories": {
+        "test_500_4": {
+          "bytes": 109061957,
+          "files": 2000
+        },
+        "train_500_4": {
+          "bytes": 545260627,
+          "files": 10000
+        },
+        "transfer_1000_4": {
+          "bytes": 11249704,
+          "files": 100
+        },
+        "transfer_1500_4": {
+          "bytes": 17389944,
+          "files": 100
+        },
+        "transfer_500_4": {
+          "bytes": 5452066,
+          "files": 100
+        },
+        "valid_500_4": {
+          "bytes": 109054646,
+          "files": 2000
+        }
+      },
+      "files": 14300,
+      "path_and_content_sha256": "2d150a0336588c765d51d73843da7eaa60a750623595bde7986acc6ddb946e26"
+    },
+    "setcover": {
+      "bytes": 3176544379,
+      "directories": {
+        "test_500r_1000c_0.05d": {
+          "bytes": 432912633,
+          "files": 2000
+        },
+        "train_500r_1000c_0.05d": {
+          "bytes": 2164554929,
+          "files": 10000
+        },
+        "transfer_1000r_1000c_0.05d": {
+          "bytes": 41928911,
+          "files": 100
+        },
+        "transfer_2000r_1000c_0.05d": {
+          "bytes": 82592364,
+          "files": 100
+        },
+        "transfer_500r_1000c_0.05d": {
+          "bytes": 21646239,
+          "files": 100
+        },
+        "valid_500r_1000c_0.05d": {
+          "bytes": 432909303,
+          "files": 2000
+        }
+      },
+      "files": 14300,
+      "path_and_content_sha256": "d3f970ad369a960f4b232d9f4e0913022cd5db4972f3b16aad0a668d556948b5"
+    }
+  },
+  "seed": 0,
+  "total_bytes": 20698476683,
+  "total_files": 57200,
+  "upstream_commit": "57e82603fba39c34ff81baf9bd0b5768f5a1a860"
+}

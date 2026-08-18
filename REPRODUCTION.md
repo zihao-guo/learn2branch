@@ -72,3 +72,13 @@ bash reproduction/run_full.sh --problem setcover --phase evaluate
 ```
 
 官方脚本会在目标目录已存在时主动报错，避免静默混合两次运行。因此每个生成阶段应只启动一次；继续已完成的流水线时从下一个 `--phase` 开始。
+
+## 当前全量进度
+
+四类问题的官方全量实例已经使用 seed 0 生成完毕：每类 14,300 个，共 57,200 个 LP 文件。可使用以下命令重新验证目录计数、连续文件名，并计算路径与内容的聚合 SHA-256：
+
+```bash
+python reproduction/audit_full_instances.py
+```
+
+审计结果保存在 `reproduction/results/full_instances_manifest.json`。实例本身保存在被 Git 忽略的 `data/instances/`，不会把数十 GB 数据错误提交到代码仓库。
