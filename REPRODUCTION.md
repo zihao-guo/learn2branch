@@ -82,3 +82,11 @@ python reproduction/audit_full_instances.py
 ```
 
 审计结果保存在 `reproduction/results/full_instances_manifest.json`。实例本身保存在被 Git 忽略的 `data/instances/`，不会把数十 GB 数据错误提交到代码仓库。
+
+全量专家采样使用集中式顺序队列，以避免最慢问题在 20-worker 并发方案中形成数十小时长尾：
+
+```bash
+LEARN2BRANCH_SAMPLE_JOBS=80 bash reproduction/run_full_sampling_queue.sh
+```
+
+默认顺序为 indset、facilities、setcover、cauctions。每类仍直接调用官方 `02_generate_dataset.py`，只改变并行 worker 数；完成标记和日志保存在 `reproduction_artifacts/full/`。若运行中断，脚本会拒绝在无完成标记的部分样本目录上继续，避免静默混合两次采样。
