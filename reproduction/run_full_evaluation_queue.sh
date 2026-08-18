@@ -79,6 +79,7 @@ run_task() {
     if ! taskset -c "$cpu" \
         env OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 \
         python 05_evaluate.py "$problem" -g -1 \
+            --include-fullstrong \
             --instance-index "$instance_index" \
             --policy-type "$policy_type" \
             --policy-name "$policy_name" \
@@ -114,6 +115,7 @@ run_queue() {
     TASKS=()
     append_problem_tasks setcover \
         internal:relpscost \
+        internal:vanillafullstrong \
         ml-competitor:extratrees_gcnn_agg \
         ml-competitor:lambdamart_khalil \
         ml-competitor:svmrank_khalil \
@@ -123,13 +125,14 @@ run_queue() {
     for problem in cauctions facilities indset; do
         append_problem_tasks "$problem" \
             internal:relpscost \
+            internal:vanillafullstrong \
             ml-competitor:extratrees_gcnn_agg \
             ml-competitor:lambdamart_khalil \
             ml-competitor:svmrank_khalil \
             gcnn:baseline
     done
-    if [[ "${#TASKS[@]}" -ne 6600 ]]; then
-        echo "Internal error: generated ${#TASKS[@]} tasks instead of 6600" >&2
+    if [[ "${#TASKS[@]}" -ne 7800 ]]; then
+        echo "Internal error: generated ${#TASKS[@]} tasks instead of 7800" >&2
         return 1
     fi
     printf "%s\n" "${TASKS[@]}" | xargs -r -n 1 -P "$EVALUATION_JOBS" \

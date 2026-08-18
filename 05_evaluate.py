@@ -166,6 +166,11 @@ if __name__ == '__main__':
         '--result-file',
         help='Explicit CSV path, useful for resumable sharded evaluation.',
     )
+    parser.add_argument(
+        '--include-fullstrong',
+        help='Include the paper expert baseline implemented by the SCIP vanillafullstrong patch.',
+        action='store_true',
+    )
     args = parser.parse_args()
 
     result_file = f"{args.problem}_{time.strftime('%Y%m%d-%H%M%S')}.csv"
@@ -174,6 +179,8 @@ if __name__ == '__main__':
     gcnn_models = ['baseline']
     other_models = ['extratrees_gcnn_agg', 'lambdamart_khalil', 'svmrank_khalil']
     internal_branchers = ['relpscost']
+    if args.include_fullstrong:
+        internal_branchers.append('vanillafullstrong')
     time_limit = args.time_limit
 
     if args.problem == 'setcover':
