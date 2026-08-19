@@ -1,0 +1,1070 @@
+{
+  "completed_families": [
+    "competitors"
+  ],
+  "families": {
+    "competitors": {
+      "runs": [
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 2102398815,
+          "directory": "trained_models/setcover/extratrees_gcnn_agg/0",
+          "family": "competitors",
+          "files": 4,
+          "model": "extratrees_gcnn_agg",
+          "path_and_content_sha256": "0af4c6bc29d0087b8acb6b2ac7925d21cb47bc382e4e1684cd0839aa24dfd1cf",
+          "problem": "setcover",
+          "seed": 0,
+          "validation_rmse": 1.32
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 2127482976,
+          "directory": "trained_models/setcover/extratrees_gcnn_agg/1",
+          "family": "competitors",
+          "files": 4,
+          "model": "extratrees_gcnn_agg",
+          "path_and_content_sha256": "092b7e9bd34d22f5e1d974d31813feef08264201a3e630f9fee21ea387e2cca8",
+          "problem": "setcover",
+          "seed": 1,
+          "validation_rmse": 1.33
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 2097000928,
+          "directory": "trained_models/setcover/extratrees_gcnn_agg/2",
+          "family": "competitors",
+          "files": 4,
+          "model": "extratrees_gcnn_agg",
+          "path_and_content_sha256": "e0a84b698480ce94148df1191829cf7583f36b0efb9a4910f23060ce86851ed0",
+          "problem": "setcover",
+          "seed": 2,
+          "validation_rmse": 1.33
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 2096024159,
+          "directory": "trained_models/setcover/extratrees_gcnn_agg/3",
+          "family": "competitors",
+          "files": 4,
+          "model": "extratrees_gcnn_agg",
+          "path_and_content_sha256": "6eb8ef9f26d9b1ef3489b0aacc3cd45865f2fad7b4600e16383e7ca41d7af107",
+          "problem": "setcover",
+          "seed": 3,
+          "validation_rmse": 1.34
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 2094333920,
+          "directory": "trained_models/setcover/extratrees_gcnn_agg/4",
+          "family": "competitors",
+          "files": 4,
+          "model": "extratrees_gcnn_agg",
+          "path_and_content_sha256": "8d978699cd61d446d7e1e4e6db701f930f2b4fa52b1ce1575e3c59fdf7441864",
+          "problem": "setcover",
+          "seed": 4,
+          "validation_rmse": 1.32
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 439085,
+          "directory": "trained_models/setcover/lambdamart_khalil/0",
+          "family": "competitors",
+          "files": 4,
+          "model": "lambdamart_khalil",
+          "path_and_content_sha256": "7026e2ffe2bd2280ebf908e7c9220eb4832681cc6571bafe9465d43e7aa40e9b",
+          "problem": "setcover",
+          "seed": 0,
+          "validation_log_ndcg": 0.10810680059294457
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 590920,
+          "directory": "trained_models/setcover/lambdamart_khalil/1",
+          "family": "competitors",
+          "files": 4,
+          "model": "lambdamart_khalil",
+          "path_and_content_sha256": "e0ae33baeb61c2de7be7af43d9d61234ece30fceda2ebd94499315507e2e6cc4",
+          "problem": "setcover",
+          "seed": 1,
+          "validation_log_ndcg": 0.09350849954910022
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 519522,
+          "directory": "trained_models/setcover/lambdamart_khalil/2",
+          "family": "competitors",
+          "files": 4,
+          "model": "lambdamart_khalil",
+          "path_and_content_sha256": "279ac4682cbc019e7bd31b6ee0679a0b36160da15e61d5c191cbf45f9e45dcfc",
+          "problem": "setcover",
+          "seed": 2,
+          "validation_log_ndcg": 0.09701882625074128
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 814340,
+          "directory": "trained_models/setcover/lambdamart_khalil/3",
+          "family": "competitors",
+          "files": 4,
+          "model": "lambdamart_khalil",
+          "path_and_content_sha256": "a669db1fc460e812b6ce0460066e1ea61240e03ca9d5ee76ec15237145b387d3",
+          "problem": "setcover",
+          "seed": 3,
+          "validation_log_ndcg": 0.14122274891809433
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 602199,
+          "directory": "trained_models/setcover/lambdamart_khalil/4",
+          "family": "competitors",
+          "files": 4,
+          "model": "lambdamart_khalil",
+          "path_and_content_sha256": "6fa81301f448777c9b8da7b1b5ebfad655a5e92513bf9965f34787b75fc9152c",
+          "problem": "setcover",
+          "seed": 4,
+          "validation_log_ndcg": 0.11694671732389393
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.txt",
+            "normalization.pkl"
+          ],
+          "best_c": 0.1,
+          "bytes": 178023,
+          "directory": "trained_models/setcover/svmrank_khalil/0",
+          "family": "competitors",
+          "files": 4,
+          "model": "svmrank_khalil",
+          "path_and_content_sha256": "8e79c498a7361a185b39170c91b937827b1eaa85f802f3bedfed97406589530d",
+          "problem": "setcover",
+          "seed": 0,
+          "validation_loss": 0.03154323821939659
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.txt",
+            "normalization.pkl"
+          ],
+          "best_c": 1.0,
+          "bytes": 176156,
+          "directory": "trained_models/setcover/svmrank_khalil/1",
+          "family": "competitors",
+          "files": 4,
+          "model": "svmrank_khalil",
+          "path_and_content_sha256": "1a31cceb86c8b69ee81f6edc49d33f840536cf54b1fbf615e24e1d3de8746ad7",
+          "problem": "setcover",
+          "seed": 1,
+          "validation_loss": 0.030777755463292557
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.txt",
+            "normalization.pkl"
+          ],
+          "best_c": 1.0,
+          "bytes": 175923,
+          "directory": "trained_models/setcover/svmrank_khalil/2",
+          "family": "competitors",
+          "files": 4,
+          "model": "svmrank_khalil",
+          "path_and_content_sha256": "9d950583ec22530b3e391729bdd10470d206771337d0887c3f21e3c9ec2f65b2",
+          "problem": "setcover",
+          "seed": 2,
+          "validation_loss": 0.0309983144807894
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.txt",
+            "normalization.pkl"
+          ],
+          "best_c": 0.1,
+          "bytes": 177892,
+          "directory": "trained_models/setcover/svmrank_khalil/3",
+          "family": "competitors",
+          "files": 4,
+          "model": "svmrank_khalil",
+          "path_and_content_sha256": "7f30b27bb87e6c16c739d0a1f118ef8a7a2709ac06199067780affd0c3752b87",
+          "problem": "setcover",
+          "seed": 3,
+          "validation_loss": 0.031256170221226676
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.txt",
+            "normalization.pkl"
+          ],
+          "best_c": 1.0,
+          "bytes": 175730,
+          "directory": "trained_models/setcover/svmrank_khalil/4",
+          "family": "competitors",
+          "files": 4,
+          "model": "svmrank_khalil",
+          "path_and_content_sha256": "ebf845509f968892adb5625a2b0845eb622631d90ce597f47fd904b2e7bb9bcb",
+          "problem": "setcover",
+          "seed": 4,
+          "validation_loss": 0.0314569453722176
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 1388063838,
+          "directory": "trained_models/cauctions/extratrees_gcnn_agg/0",
+          "family": "competitors",
+          "files": 4,
+          "model": "extratrees_gcnn_agg",
+          "path_and_content_sha256": "48ef78ef9ed30eebce1ebfb98da64d1d4f00dfa3cb53a6fd50175af98da278b9",
+          "problem": "cauctions",
+          "seed": 0,
+          "validation_rmse": 237.78
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 1397972319,
+          "directory": "trained_models/cauctions/extratrees_gcnn_agg/1",
+          "family": "competitors",
+          "files": 4,
+          "model": "extratrees_gcnn_agg",
+          "path_and_content_sha256": "dfbf374cf5ee92ff5823301ba35c9899bc0e6170582aa011bc47b73ad378a26c",
+          "problem": "cauctions",
+          "seed": 1,
+          "validation_rmse": 238.92
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 1399803102,
+          "directory": "trained_models/cauctions/extratrees_gcnn_agg/2",
+          "family": "competitors",
+          "files": 4,
+          "model": "extratrees_gcnn_agg",
+          "path_and_content_sha256": "ead4aef58c7f950a2aceb431dbfe3b32fe831a4185918547fc2f7f5172632bbf",
+          "problem": "cauctions",
+          "seed": 2,
+          "validation_rmse": 238.98
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 1369027422,
+          "directory": "trained_models/cauctions/extratrees_gcnn_agg/3",
+          "family": "competitors",
+          "files": 4,
+          "model": "extratrees_gcnn_agg",
+          "path_and_content_sha256": "b748e6b056ab54485da3d175be6133bc36b0bf1af2da81ddded44aac9910629a",
+          "problem": "cauctions",
+          "seed": 3,
+          "validation_rmse": 239.67
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 1386404574,
+          "directory": "trained_models/cauctions/extratrees_gcnn_agg/4",
+          "family": "competitors",
+          "files": 4,
+          "model": "extratrees_gcnn_agg",
+          "path_and_content_sha256": "8ef934c24ad36e59e7e05f510d7b38eba3c2b2ef2003e822d030503d06ca976d",
+          "problem": "cauctions",
+          "seed": 4,
+          "validation_rmse": 239.11
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 755878,
+          "directory": "trained_models/cauctions/lambdamart_khalil/0",
+          "family": "competitors",
+          "files": 4,
+          "model": "lambdamart_khalil",
+          "path_and_content_sha256": "6390a61ccb1cf3267e69a0804fe7ef3e77f3b2dd2a2269a9e8486f4d1d5bb8e3",
+          "problem": "cauctions",
+          "seed": 0,
+          "validation_log_ndcg": 0.06847969861226683
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 406673,
+          "directory": "trained_models/cauctions/lambdamart_khalil/1",
+          "family": "competitors",
+          "files": 4,
+          "model": "lambdamart_khalil",
+          "path_and_content_sha256": "cfc053864dc8d10124e96569a2e85421dd9ea9df9816eec12675b35ab7edd1c6",
+          "problem": "cauctions",
+          "seed": 1,
+          "validation_log_ndcg": 0.08574353202998547
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 495774,
+          "directory": "trained_models/cauctions/lambdamart_khalil/2",
+          "family": "competitors",
+          "files": 4,
+          "model": "lambdamart_khalil",
+          "path_and_content_sha256": "d51236d26d218ab3663b932c9a3e409208cee05956e921587d4d682eeceac42f",
+          "problem": "cauctions",
+          "seed": 2,
+          "validation_log_ndcg": 0.07189582640967579
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 544107,
+          "directory": "trained_models/cauctions/lambdamart_khalil/3",
+          "family": "competitors",
+          "files": 4,
+          "model": "lambdamart_khalil",
+          "path_and_content_sha256": "b3592dda80047517de36632e919a0683ed1380077234d1c29f54aa308ac92ecf",
+          "problem": "cauctions",
+          "seed": 3,
+          "validation_log_ndcg": 0.12087543603854833
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 343882,
+          "directory": "trained_models/cauctions/lambdamart_khalil/4",
+          "family": "competitors",
+          "files": 4,
+          "model": "lambdamart_khalil",
+          "path_and_content_sha256": "5537c40e6c964a6de413eb969840268d3638d799686bc4b07aeb9ba3b5524c35",
+          "problem": "cauctions",
+          "seed": 4,
+          "validation_log_ndcg": 0.06699750232114442
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.txt",
+            "normalization.pkl"
+          ],
+          "best_c": 0.1,
+          "bytes": 160613,
+          "directory": "trained_models/cauctions/svmrank_khalil/0",
+          "family": "competitors",
+          "files": 4,
+          "model": "svmrank_khalil",
+          "path_and_content_sha256": "10eb0103bc7c8fe723821c955bc925c3025ec86d820eac75d145df58c126fc4d",
+          "problem": "cauctions",
+          "seed": 0,
+          "validation_loss": 0.026492987870876936
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.txt",
+            "normalization.pkl"
+          ],
+          "best_c": 0.1,
+          "bytes": 160828,
+          "directory": "trained_models/cauctions/svmrank_khalil/1",
+          "family": "competitors",
+          "files": 4,
+          "model": "svmrank_khalil",
+          "path_and_content_sha256": "e43c599f60889ee3d917d11aea108c931a6ef68a611aa21b6468cdba7028483f",
+          "problem": "cauctions",
+          "seed": 1,
+          "validation_loss": 0.025684355102646737
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.txt",
+            "normalization.pkl"
+          ],
+          "best_c": 0.1,
+          "bytes": 160549,
+          "directory": "trained_models/cauctions/svmrank_khalil/2",
+          "family": "competitors",
+          "files": 4,
+          "model": "svmrank_khalil",
+          "path_and_content_sha256": "3e78968baa2991e34ba9011756df13385ea3e123d9760f5c3985bf7ce01b1f18",
+          "problem": "cauctions",
+          "seed": 2,
+          "validation_loss": 0.026376690910476206
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.txt",
+            "normalization.pkl"
+          ],
+          "best_c": 0.1,
+          "bytes": 160797,
+          "directory": "trained_models/cauctions/svmrank_khalil/3",
+          "family": "competitors",
+          "files": 4,
+          "model": "svmrank_khalil",
+          "path_and_content_sha256": "afd542c020385b6e8577727cfaff4658998aab186a1252705b1ff89f52effcd8",
+          "problem": "cauctions",
+          "seed": 3,
+          "validation_loss": 0.02627549907691996
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.txt",
+            "normalization.pkl"
+          ],
+          "best_c": 1.0,
+          "bytes": 159413,
+          "directory": "trained_models/cauctions/svmrank_khalil/4",
+          "family": "competitors",
+          "files": 4,
+          "model": "svmrank_khalil",
+          "path_and_content_sha256": "0adc90a4f512e94324bcb6872871e3700317937b6a95361526233e7156c2756e",
+          "problem": "cauctions",
+          "seed": 4,
+          "validation_loss": 0.025943058628323086
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 383270600,
+          "directory": "trained_models/facilities/extratrees_gcnn_agg/0",
+          "family": "competitors",
+          "files": 4,
+          "model": "extratrees_gcnn_agg",
+          "path_and_content_sha256": "7a2244b023edf89569027de63b27f8f6c5552464cef42fdec940b1f6b2c7bd17",
+          "problem": "facilities",
+          "seed": 0,
+          "validation_rmse": 60.92
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 386888521,
+          "directory": "trained_models/facilities/extratrees_gcnn_agg/1",
+          "family": "competitors",
+          "files": 4,
+          "model": "extratrees_gcnn_agg",
+          "path_and_content_sha256": "8019c39045fa737cd93ad1b10bcc60d35ab043397b68b6dd1c4cd05cd8c5b697",
+          "problem": "facilities",
+          "seed": 1,
+          "validation_rmse": 60.79
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 384346185,
+          "directory": "trained_models/facilities/extratrees_gcnn_agg/2",
+          "family": "competitors",
+          "files": 4,
+          "model": "extratrees_gcnn_agg",
+          "path_and_content_sha256": "1abe350bb4493f2b6aebf434af37dae448caad25a4f47255e8c9744c9e01f425",
+          "problem": "facilities",
+          "seed": 2,
+          "validation_rmse": 61.03
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 375253576,
+          "directory": "trained_models/facilities/extratrees_gcnn_agg/3",
+          "family": "competitors",
+          "files": 4,
+          "model": "extratrees_gcnn_agg",
+          "path_and_content_sha256": "20fd6e48d34bf7d8978023ae464869f822975a4b6ac31a775435f287ba23c4cd",
+          "problem": "facilities",
+          "seed": 3,
+          "validation_rmse": 60.95
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 385396169,
+          "directory": "trained_models/facilities/extratrees_gcnn_agg/4",
+          "family": "competitors",
+          "files": 4,
+          "model": "extratrees_gcnn_agg",
+          "path_and_content_sha256": "fd8ae51df243af292ae0a29b5bcc13347bd5c6a012ff49dfc27d345a71a6166e",
+          "problem": "facilities",
+          "seed": 4,
+          "validation_rmse": 60.74
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 675479,
+          "directory": "trained_models/facilities/lambdamart_khalil/0",
+          "family": "competitors",
+          "files": 4,
+          "model": "lambdamart_khalil",
+          "path_and_content_sha256": "4dee4db5b7099e908c18ac3ff6b50780c3c2a04f3bf3b3a2ffb5bbd960e12697",
+          "problem": "facilities",
+          "seed": 0,
+          "validation_log_ndcg": -0.010773973229770934
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 956168,
+          "directory": "trained_models/facilities/lambdamart_khalil/1",
+          "family": "competitors",
+          "files": 4,
+          "model": "lambdamart_khalil",
+          "path_and_content_sha256": "e1b6ae7aacef3798cdfec7ec65253e3d7f16658cf43609f0ce4fd8cd8d3c1806",
+          "problem": "facilities",
+          "seed": 1,
+          "validation_log_ndcg": -0.019365815307819306
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 611911,
+          "directory": "trained_models/facilities/lambdamart_khalil/2",
+          "family": "competitors",
+          "files": 4,
+          "model": "lambdamart_khalil",
+          "path_and_content_sha256": "a223d340651be78d7d41fd18fbed0e8d2ed54316c6baebb15f54bda4b508dbfe",
+          "problem": "facilities",
+          "seed": 2,
+          "validation_log_ndcg": -0.02098422145455429
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 637338,
+          "directory": "trained_models/facilities/lambdamart_khalil/3",
+          "family": "competitors",
+          "files": 4,
+          "model": "lambdamart_khalil",
+          "path_and_content_sha256": "e0502c02d0abb047d2cc1ba840be60c7619667ce0396ed440ec7585475c3a692",
+          "problem": "facilities",
+          "seed": 3,
+          "validation_log_ndcg": -0.02630950012924578
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 929530,
+          "directory": "trained_models/facilities/lambdamart_khalil/4",
+          "family": "competitors",
+          "files": 4,
+          "model": "lambdamart_khalil",
+          "path_and_content_sha256": "f657a7af4213f2372cf00043acb5a766c98b80f3a9780679c192bc19f7e6c85d",
+          "problem": "facilities",
+          "seed": 4,
+          "validation_log_ndcg": -0.01493326450179592
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.txt",
+            "normalization.pkl"
+          ],
+          "best_c": 0.1,
+          "bytes": 165582,
+          "directory": "trained_models/facilities/svmrank_khalil/0",
+          "family": "competitors",
+          "files": 4,
+          "model": "svmrank_khalil",
+          "path_and_content_sha256": "a25156e2634db83b5cc0afe8e72e00f4f7eee2f037cda9489e4da21ebfa87e3d",
+          "problem": "facilities",
+          "seed": 0,
+          "validation_loss": 0.012340723702447024
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.txt",
+            "normalization.pkl"
+          ],
+          "best_c": 0.01,
+          "bytes": 167541,
+          "directory": "trained_models/facilities/svmrank_khalil/1",
+          "family": "competitors",
+          "files": 4,
+          "model": "svmrank_khalil",
+          "path_and_content_sha256": "6d52a2e3c5b0cfd9b0b6539cfe39614f71537f21c79fdd361193d3763a7a95ad",
+          "problem": "facilities",
+          "seed": 1,
+          "validation_loss": 0.012518857541489766
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.txt",
+            "normalization.pkl"
+          ],
+          "best_c": 0.01,
+          "bytes": 167521,
+          "directory": "trained_models/facilities/svmrank_khalil/2",
+          "family": "competitors",
+          "files": 4,
+          "model": "svmrank_khalil",
+          "path_and_content_sha256": "7430eaf4d40c276888414f4367e5e27b3a60794fd4aa9c296611ea20bde600de",
+          "problem": "facilities",
+          "seed": 2,
+          "validation_loss": 0.012704196143962189
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.txt",
+            "normalization.pkl"
+          ],
+          "best_c": 0.1,
+          "bytes": 165518,
+          "directory": "trained_models/facilities/svmrank_khalil/3",
+          "family": "competitors",
+          "files": 4,
+          "model": "svmrank_khalil",
+          "path_and_content_sha256": "a39b045c60365963810a720b3db8f3fd586a2a04747bffe5ded08994a6ef16b0",
+          "problem": "facilities",
+          "seed": 3,
+          "validation_loss": 0.012611996568149762
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.txt",
+            "normalization.pkl"
+          ],
+          "best_c": 0.01,
+          "bytes": 167478,
+          "directory": "trained_models/facilities/svmrank_khalil/4",
+          "family": "competitors",
+          "files": 4,
+          "model": "svmrank_khalil",
+          "path_and_content_sha256": "a630bad8c31aebb0ef2bec832ba43bc78ac8275b4a46ee04ce405d03376770a4",
+          "problem": "facilities",
+          "seed": 4,
+          "validation_loss": 0.012520816168975043
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 2365273069,
+          "directory": "trained_models/indset/extratrees_gcnn_agg/0",
+          "family": "competitors",
+          "files": 4,
+          "model": "extratrees_gcnn_agg",
+          "path_and_content_sha256": "33c23b30351539ce815a4284a32526f4d4b9000844db822f638dcf846f973907",
+          "problem": "indset",
+          "seed": 0,
+          "validation_rmse": 0.15
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 2381690734,
+          "directory": "trained_models/indset/extratrees_gcnn_agg/1",
+          "family": "competitors",
+          "files": 4,
+          "model": "extratrees_gcnn_agg",
+          "path_and_content_sha256": "3b50b5d67e622570578da6126c7c47034e98d521d0441cfab9051539d9831e45",
+          "problem": "indset",
+          "seed": 1,
+          "validation_rmse": 0.15
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 2324327662,
+          "directory": "trained_models/indset/extratrees_gcnn_agg/2",
+          "family": "competitors",
+          "files": 4,
+          "model": "extratrees_gcnn_agg",
+          "path_and_content_sha256": "e5bd02b02cab252f74e0276a051ba573a7b7b536b957dcba67b4f1a544ed5394",
+          "problem": "indset",
+          "seed": 2,
+          "validation_rmse": 0.15
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 2341038317,
+          "directory": "trained_models/indset/extratrees_gcnn_agg/3",
+          "family": "competitors",
+          "files": 4,
+          "model": "extratrees_gcnn_agg",
+          "path_and_content_sha256": "c3c6323a4a37c67d11edc9e22681adba2b817d5b3bf0468f57de033ca09ece00",
+          "problem": "indset",
+          "seed": 3,
+          "validation_rmse": 0.15
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 2399952366,
+          "directory": "trained_models/indset/extratrees_gcnn_agg/4",
+          "family": "competitors",
+          "files": 4,
+          "model": "extratrees_gcnn_agg",
+          "path_and_content_sha256": "639dbb68f7290f4b2f957f8b76a5220e8fca58ae38fe110bb6233336d833ef8b",
+          "problem": "indset",
+          "seed": 4,
+          "validation_rmse": 0.15
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 298057,
+          "directory": "trained_models/indset/lambdamart_khalil/0",
+          "family": "competitors",
+          "files": 4,
+          "model": "lambdamart_khalil",
+          "path_and_content_sha256": "7a0c9abddbf70f1d7e13a95a70ab284da84b2311e6609f204b690c75de5b1c9c",
+          "problem": "indset",
+          "seed": 0,
+          "validation_log_ndcg": -0.2977651360018306
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 151731,
+          "directory": "trained_models/indset/lambdamart_khalil/1",
+          "family": "competitors",
+          "files": 4,
+          "model": "lambdamart_khalil",
+          "path_and_content_sha256": "8baa4462be840bb1611732a3524503849042a1fa8e17ca146d9016b241b01166",
+          "problem": "indset",
+          "seed": 1,
+          "validation_log_ndcg": -0.234107254651958
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 571599,
+          "directory": "trained_models/indset/lambdamart_khalil/2",
+          "family": "competitors",
+          "files": 4,
+          "model": "lambdamart_khalil",
+          "path_and_content_sha256": "3ac454657c54d821cae2decbd4f004647f57cbdd685ffa307aed76c41ba16838",
+          "problem": "indset",
+          "seed": 2,
+          "validation_log_ndcg": -0.26449348531720956
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 630629,
+          "directory": "trained_models/indset/lambdamart_khalil/3",
+          "family": "competitors",
+          "files": 4,
+          "model": "lambdamart_khalil",
+          "path_and_content_sha256": "9be6414d0ba6ed59bb4986ddbc1748e451018232e36669ebeaa13593c8759680",
+          "problem": "indset",
+          "seed": 3,
+          "validation_log_ndcg": -0.18693174668264587
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.pkl",
+            "normalization.pkl"
+          ],
+          "bytes": 459381,
+          "directory": "trained_models/indset/lambdamart_khalil/4",
+          "family": "competitors",
+          "files": 4,
+          "model": "lambdamart_khalil",
+          "path_and_content_sha256": "41994d3bb88cb27f4339b29622ad0b4fe3edccbc8db28158d804ac40b1a8aa67",
+          "problem": "indset",
+          "seed": 4,
+          "validation_log_ndcg": -0.2540258175564253
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.txt",
+            "normalization.pkl"
+          ],
+          "best_c": 1.0,
+          "bytes": 155098,
+          "directory": "trained_models/indset/svmrank_khalil/0",
+          "family": "competitors",
+          "files": 4,
+          "model": "svmrank_khalil",
+          "path_and_content_sha256": "595a9ec3b073ab26909a9c79a3792b3b54c31c1c0127feffa2fd6abe1323a3ac",
+          "problem": "indset",
+          "seed": 0,
+          "validation_loss": 0.09651054186560563
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.txt",
+            "normalization.pkl"
+          ],
+          "best_c": 1.0,
+          "bytes": 155231,
+          "directory": "trained_models/indset/svmrank_khalil/1",
+          "family": "competitors",
+          "files": 4,
+          "model": "svmrank_khalil",
+          "path_and_content_sha256": "a6794f8368ff75e211d297d259e1b932da32302b2f21b1f03f84f24965505b07",
+          "problem": "indset",
+          "seed": 1,
+          "validation_loss": 0.0974769411989395
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.txt",
+            "normalization.pkl"
+          ],
+          "best_c": 1.0,
+          "bytes": 154694,
+          "directory": "trained_models/indset/svmrank_khalil/2",
+          "family": "competitors",
+          "files": 4,
+          "model": "svmrank_khalil",
+          "path_and_content_sha256": "3f0c2b377772e780b3f341530e4b6bc01516ad62a4e6f99b7b0b6854458f30c1",
+          "problem": "indset",
+          "seed": 2,
+          "validation_loss": 0.09534484333660673
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.txt",
+            "normalization.pkl"
+          ],
+          "best_c": 1.0,
+          "bytes": 155276,
+          "directory": "trained_models/indset/svmrank_khalil/3",
+          "family": "competitors",
+          "files": 4,
+          "model": "svmrank_khalil",
+          "path_and_content_sha256": "4f536efbb02f299a45317da8f5c7c7615d215b9632498de105fe8efd894ee3bb",
+          "problem": "indset",
+          "seed": 3,
+          "validation_loss": 0.09533991233394432
+        },
+        {
+          "artifacts": [
+            "feat_specs.pkl",
+            "log.txt",
+            "model.txt",
+            "normalization.pkl"
+          ],
+          "best_c": 1.0,
+          "bytes": 155149,
+          "directory": "trained_models/indset/svmrank_khalil/4",
+          "family": "competitors",
+          "files": 4,
+          "model": "svmrank_khalil",
+          "path_and_content_sha256": "0566f369648c24ac737b2c0fce184d4d58d6923150658f5a594e8e4a3c74f223",
+          "problem": "indset",
+          "seed": 4,
+          "validation_loss": 0.09452418459772341
+        }
+      ],
+      "total_bytes": 31200678467,
+      "total_files": 240,
+      "total_runs": 60
+    }
+  },
+  "paper": "arXiv:1906.01629",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "total_bytes": 31200678467,
+  "total_files": 240,
+  "total_runs": 60,
+  "training_scripts": [
+    "03_train_gcnn.py",
+    "03_train_competitor.py"
+  ],
+  "upstream_commit": "57e82603fba39c34ff81baf9bd0b5768f5a1a860"
+}
